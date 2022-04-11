@@ -11,6 +11,7 @@
 	<br></br>
 	Multiply 7*3 : <%= 7*3 %>
 	<br>
+	<br />
 	<jsp:include page="newExample.jsp"></jsp:include>
 </body>
 </html>
