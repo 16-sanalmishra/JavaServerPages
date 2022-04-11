@@ -1,7 +1,0 @@
-package com.JSPDemo;
-
-public class testClass {
-	public static String upperCase(String data){
-			return data.toUpperCase();
-	}
-}

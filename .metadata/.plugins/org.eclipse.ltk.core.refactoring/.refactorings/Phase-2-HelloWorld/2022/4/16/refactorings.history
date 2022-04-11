@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;Phase-2-HelloWorld/src/main/webapp/helloWorls.jsp&apos; to &apos;helloWorld.jsp&apos;" description="Rename resource &apos;helloWorls.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/helloWorls.jsp" name="helloWorld.jsp" stamp="1649657663536" updateReferences="true"/>
-</session>

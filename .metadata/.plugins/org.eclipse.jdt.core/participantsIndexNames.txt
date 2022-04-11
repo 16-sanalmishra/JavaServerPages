@@ -1,3 +1,0 @@
-INDEX VERSION 1.131
-C:\Users\sanamishra\eclipse-workspace\Java_FSD_Practice\JSP_Demos\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3412532576.index
-\Phase-2-HelloWorld\src\main\java
