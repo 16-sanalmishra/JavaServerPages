@@ -4,11 +4,22 @@ public class Student {
 	private String firstName;
 	private String lastName;
 	private int age;
-	public Student(String firstName, String lastName, int age) {
+	private boolean receiveReward;
+	
+	public Student(String firstName, String lastName, int age, boolean receiveReward) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.age = age;
+		this.receiveReward = receiveReward;
 	}
+	
+	public boolean isReceiveReward() {
+		return receiveReward;
+	}
+	public void setReceiveReward(boolean receiveReward) {
+		this.receiveReward = receiveReward;
+	}
+	
 	public String getFirstName() {
 		return firstName;
 	}

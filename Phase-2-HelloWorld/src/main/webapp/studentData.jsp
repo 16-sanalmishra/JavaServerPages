@@ -1,11 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-  <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page import="java.util.*, com.JSPDemo.Student" %> 
 <%
 	List<Student> stu = new ArrayList<Student>();
-	stu.add(new Student("Sanal","Mishra",21));
-	stu.add(new Student("Sonal","Singh",21));
+	stu.add(new Student("Sanal","Mishra",21,false));
+	stu.add(new Student("Sonal","Singh",21,true));
 
 	pageContext.setAttribute("data", stu);
 %>
@@ -22,17 +22,23 @@
 	<th>firstName</th>
 	<th>LastName</th>
 	<th>Age</th>
+	<th>Receive Reward</th>
 </tr>
-	<c:forEach var="s" items="${data}">
-	
+	<c:forEach var="student" items="${data}">
 			<tr>
-				<td>${s.firstName}</td> 
-				<td>${s.lastName}</td>
-				<td>${s.age}</td>
+				<td>${student.firstName}</td> 
+				<td>${student.lastName}</td>
+				<td>${student.age}</td>				
+				<td>
+					<c:if test="${student.receiveReward}">
+						Receive Award
+					</c:if>
+					<c:if test="${not student.receiveReward}">
+						-
+					</c:if>
+				</td>
 			</tr>
-	
-	
-	</c:forEach>
+		</c:forEach>
 
 
 </table>
